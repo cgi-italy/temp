@@ -1,0 +1,212 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using the Python API &mdash; insula 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/./service-doc.css?v=b1fb6716" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Examples" href="examples.html" />
+    <link rel="prev" title="Insula Code Lab" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            insula
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../insula/index.html">Insula</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Insula Code Lab</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using the Python API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#default-list-of-packages">Default list of packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-new-packages">Install new packages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-new-environment">Create a new environment?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#activate-it">Activate it</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-a-new-package">Install a new package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enable-the-environment-for-usage-in-a-notebook-s-kernel">Enable the environment for usage in a notebook’s kernel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-the-environment">Test the environment</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#going-deep-ensuring-reproducible-results">Going Deep: Ensuring Reproducible Results</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../known_issues.html">Known Issues</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">insula</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Insula Code Lab</a></li>
+      <li class="breadcrumb-item active">Using the Python API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/lab/python_api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="using-the-python-api">
+<h1>Using the Python API<a class="headerlink" href="#using-the-python-api" title="Link to this heading"></a></h1>
+<p>The Python API is a set of functions and methods that allows developers to interact with Python applications and libraries. These APIs are used to perform a wide range of tasks, such as retrieving data, sending commands, and integrating with other systems.</p>
+<p>Python APIs are typically implemented as modules or packages that can be imported into Python code. Once an API is imported, developers can use the functions and methods provided by the API to interact with the application or library.</p>
+<p>Some examples of popular Python APIs that will be available in the Code Lab:</p>
+<ul class="simple">
+<li><p>Requests: A library for making HTTP requests</p></li>
+<li><p>NumPy: A library for scientific computing</p></li>
+<li><p>Pandas: A library for data analysis and manipulation</p></li>
+<li><p>Scikit-learn: A library for machine learning</p></li>
+<li><p>GDAL: A library which is a set of Python bindings for the GDAL geospatial data abstraction library. GDAL is a translator library for raster and vector geospatial data formats.</p></li>
+</ul>
+<p>To use a Python API, developers typically need to:</p>
+<ul class="simple">
+<li><p>Install the API module or package. This is optional if the list of packages needed to the user is already available in the default installation.</p></li>
+<li><p>Import the API into their Python code and/or notebooks.</p></li>
+</ul>
+<p>Use the functions and methods provided by the API to interact with the application or library.</p>
+<section id="default-list-of-packages">
+<h2>Default list of packages<a class="headerlink" href="#default-list-of-packages" title="Link to this heading"></a></h2>
+<p>You can retrieve thhe list of pre-installed packages by:</p>
+<ul class="simple">
+<li><p>Opening a Terminal,</p></li>
+<li><p>Typing the command <em>conda list</em>.</p></li>
+</ul>
+</section>
+<section id="install-new-packages">
+<span id="python-new-package"></span><h2>Install new packages<a class="headerlink" href="#install-new-packages" title="Link to this heading"></a></h2>
+<p>When installing new packages, you can leverage Python environments. Read more at <a class="reference internal" href="#python-env"><span class="std std-ref">Going Deep: Ensuring Reproducible Results</span></a>.</p>
+<p>The following steps create an environment, install an arbitrary package and make it available to be used in a Notebook.</p>
+<section id="create-a-new-environment">
+<h3>Create a new environment?<a class="headerlink" href="#create-a-new-environment" title="Link to this heading"></a></h3>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m venv /home/jovyan/my_env</span>
+</pre></div>
+</div>
+</section>
+<section id="activate-it">
+<h3>Activate it<a class="headerlink" href="#activate-it" title="Link to this heading"></a></h3>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">source /home/jovyan/my_env/bin/activate</span>
+</pre></div>
+</div>
+</section>
+<section id="install-a-new-package">
+<h3>Install a new package<a class="headerlink" href="#install-a-new-package" title="Link to this heading"></a></h3>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install dvc # dvc is an arbitrary package in this example.</span>
+</pre></div>
+</div>
+</section>
+<section id="enable-the-environment-for-usage-in-a-notebook-s-kernel">
+<h3>Enable the environment for usage in a notebook’s kernel<a class="headerlink" href="#enable-the-environment-for-usage-in-a-notebook-s-kernel" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Type:</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install ipykernel</span>
+<span class="go">python -m venv /home/jovyan/my_env</span>
+<span class="go">ipython kernel install --user --name=my_env</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Refresh the browser.</p></li>
+</ul>
+</section>
+<section id="test-the-environment">
+<h3>Test the environment<a class="headerlink" href="#test-the-environment" title="Link to this heading"></a></h3>
+<p>The steps above results in a new entry in the GUI called my_env:</p>
+<a class="reference internal image-reference" href="../_images/python_api_new_env.png"><img alt="Code Lab new environment" src="../_images/python_api_new_env.png" style="width: 50%;" />
+</a>
+<p>In which it is possible to import the newly installed module:</p>
+<a class="reference internal image-reference" href="../_images/python_api_new_package.png"><img alt="Code Lab new package" src="../_images/python_api_new_package.png" style="width: 50%;" />
+</a>
+</section>
+</section>
+<section id="going-deep-ensuring-reproducible-results">
+<span id="python-env"></span><h2>Going Deep: Ensuring Reproducible Results<a class="headerlink" href="#going-deep-ensuring-reproducible-results" title="Link to this heading"></a></h2>
+<p>A dedicated Python environment is essential for achieving reproducible results with your Python notebooks. Here’s how it helps:</p>
+<ul class="simple">
+<li><p><strong>Isolated Dependencies:</strong> An environment allows you to manage the specific versions of libraries and packages required for your notebook. This prevents conflicts with other projects or system-wide installations that might have different dependencies.</p></li>
+<li><p><strong>Repeatability Across Systems:</strong> By capturing the exact set of packages and their versions within the environment, you can ensure your notebook executes consistently, regardless of the machine or environment it’s run on. This is crucial for sharing notebooks with colleagues or replicating your work later.</p></li>
+</ul>
+<p>Consider this scenario:</p>
+<p>Without an environment, you might have several versions of libraries installed on your system. If your notebook relies on a specific version of a library (e.g., pandas==1.4.1), running it on another machine with a different version (e.g., pandas==1.5.0) could lead to unexpected behavior or errors.</p>
+<p><strong>Using a Python environment solves this issue by guaranteeing a consistent set of dependencies for your notebook, promoting reliable and reproducible results.</strong></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Insula Code Lab" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright (&#39;2024&#39;, &#39;CGI Italy&#39;).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

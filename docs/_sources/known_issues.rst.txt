@@ -1,0 +1,10 @@
+.. _known_issues:
+
+Known Issues
+============
+
+While we strive to provide a seamless experience, there might be occasional hiccups. We're constantly working on improvements, and we appreciate your patience.
+
+Currently, we do not have identified known issues.
+
+However, if you encounter any other unexpected behavior, please don't hesitate to report it to our support team.

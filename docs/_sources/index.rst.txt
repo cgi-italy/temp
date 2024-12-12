@@ -1,0 +1,37 @@
+Insula Documentation
+=====================
+
+With its powerful big data analytics capabilities, Insula allows users to perform complex analyses on this integrated and harmonized dataset. This includes trend analysis, anomaly detection, predictive modeling, and much more, providing users with deep insights into Earth-related phenomena.
+
+Insula is designed for everyone, regardless of your background in Earth Observation. Thanks to its **user-friendly** interface it ensures a seamless user experience. Moreover at CGI we leverage **cutting-edge technology** to provide the most accurate and up-to-date information. You can tailor Insula to your specific needs, from selecting the data sources that matter most to creating customized reports and dashboards.
+
+Insula excels in providing a comprehensive set of functionalities designed to maximize the value of EO data:
+
+* **Combine Data and Services for Information Generation**: Insula seamlessly combines data and services to transform raw information into actionable insights, empowering informed decision-making. Its standard interface enables to integrate new dataset driven by user needs.
+
+* **Integrate New Services**: Insula's adaptable platform allows users to effortlessly integrate new services, ensuring access to cutting-edge technologies without constraints.
+
+* **Run processing campaigns with autoscaling**: Insula's autoscaling feature optimizes large-scale processing for efficiency and cost-effectiveness.
+
+* **Monitor Processing Execution**: Insula's robust monitoring system offers real-time oversight, enabling users to track progress, identify issues, and make quick adjustments for enhanced efficiency and accuracy.
+
+The following pages provide a guidance to the Insula's services and capabilities.
+
+You may also find it useful to refer to:
+
+* The list of :ref:`faq`.
+
+* The list of :ref:`known_issues`.
+
+If none of these pages answer your question, then please contact us at https://platform.destine.eu/support.
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   getting_started
+   insula/index
+   lab/index
+   faq
+   known_issues

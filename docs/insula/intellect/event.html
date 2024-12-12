@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Processing &mdash; insula 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/./service-doc.css?v=b1fb6716" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Monitor your processing" href="monitor.html" />
+    <link rel="prev" title="Systematic Processing" href="systematic.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            insula
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Insula</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../perception/index.html">Insula Perception</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Insula Intellect</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="process.html">Process some data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="systematic.html">Systematic Processing</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Event Processing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#accessing-the-feature">Accessing the feature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#input-criteria">Input criteria</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#processing-configuration">Processing configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operating-mode">Operating mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="monitor.html">Monitor your processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html">Integrate your own algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="services/index.html">Processing Services</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../awareness.html">Insula Awareness</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../lab/index.html">Insula Code Lab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../known_issues.html">Known Issues</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">insula</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Insula</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Insula Intellect</a></li>
+      <li class="breadcrumb-item active">Event Processing</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/insula/intellect/event.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="event-processing">
+<span id="events"></span><h1>Event Processing<a class="headerlink" href="#event-processing" title="Link to this heading"></a></h1>
+<p>Event processing is the capability of the system to execute various processing services based on specific triggers or events. These events encompass services that can run:</p>
+<ul class="simple">
+<li><p><strong>Data driven</strong>: New data arrives, either in real-time or at regular intervals.</p></li>
+<li><p><strong>Time driven</strong>: Predefined time-based triggers (e.g., daily, weekly, monthly).</p></li>
+<li><p><strong>One-off</strong>: Ad-hoc requests or specific occurrences (e.g., disaster response, specific user request).</p></li>
+</ul>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<p>The event processing is only available to users with role <em>Expert User</em>.</p>
+</section>
+<section id="accessing-the-feature">
+<h2>Accessing the feature<a class="headerlink" href="#accessing-the-feature" title="Link to this heading"></a></h2>
+<p>Intellect offers you the option to perform event processing. Just:</p>
+<ul class="simple">
+<li><p>Visit <a class="reference external" href="https://insula.destine.eu/sir">https://insula.destine.eu/sir</a>.</p></li>
+<li><p>Click on <em>Process some data</em>.</p></li>
+<li><p>Identify the card <em>Event processing</em>.</p></li>
+<li><p>Click on <em>Event types</em> under that card.</p></li>
+<li><p>Select one of the available <em>Event templates</em>.</p></li>
+</ul>
+</section>
+<section id="input-criteria">
+<h2>Input criteria<a class="headerlink" href="#input-criteria" title="Link to this heading"></a></h2>
+<p>The event processing allows you specifying <em>criteria</em> for the input satellite data selection, in particular:</p>
+<ul class="simple">
+<li><p>area of interest</p></li>
+<li><p>start and end of the processing</p></li>
+</ul>
+<img alt="Insula Intellect Event Processing" src="../../_images/intellect_event_1.png" />
+</section>
+<section id="processing-configuration">
+<h2>Processing configuration<a class="headerlink" href="#processing-configuration" title="Link to this heading"></a></h2>
+<p>As an event processing is likely involving multiple processing services, it lets the user to configure them individually, deciding if you want to enable all the preset, or select some of them. Click on the button <em>Processing configuration</em> and see a page similar to the following:</p>
+<img alt="Insula Intellect Event Processing" src="../../_images/intellect_event_2.png" />
+<p>Click on the <em>edit</em> button on each service to further configure it. For example:</p>
+<a class="reference internal image-reference" href="../../_images/intellect_event_3.png"><img alt="Insula Intellect Event Processing" src="../../_images/intellect_event_3.png" style="width: 50%;" />
+</a>
+<a class="reference internal image-reference" href="../../_images/intellect_event_4.png"><img alt="Insula Intellect Event Processing" src="../../_images/intellect_event_4.png" style="width: 50%;" />
+</a>
+<p>It is also possible to add reference data collections, to enrich the event with relevant data for the event.</p>
+</section>
+<section id="operating-mode">
+<h2>Operating mode<a class="headerlink" href="#operating-mode" title="Link to this heading"></a></h2>
+<p>Once this service is running:</p>
+<ul class="simple">
+<li><p>It will periodically search for data that matches the criteria</p></li>
+<li><p>If it finds any, then it will launch job(s) to process the new data using the specified service(s), making the output available in the same way as for any other job.</p></li>
+<li><p>If there is a processing service configured in time driven mode, it will execute as many jobs as the configured.</p>
+<ul>
+<li><p>For example, if the event runs for a time-span of 30 days, and one of the services is configured to run daily, the event processing will generate 30 jobs for that service.</p></li>
+</ul>
+</li>
+</ul>
+<p>This means that once the job is started, there might first be a bulk processing of any historic data, then periodic processing of any new data that arrives.</p>
+<section id="important-note">
+<h3>Important note<a class="headerlink" href="#important-note" title="Link to this heading"></a></h3>
+<p>Any processing will be conditional upon the user having a sufficient credit. If the user’s balance expires then the processing will be paused, then resume once the balance has been augmented.
+At the moment the system does not foresee any warning when the user’s credit is about to expire.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="systematic.html" class="btn btn-neutral float-left" title="Systematic Processing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="monitor.html" class="btn btn-neutral float-right" title="Monitor your processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright (&#39;2024&#39;, &#39;CGI Italy&#39;).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

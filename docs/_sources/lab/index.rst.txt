@@ -1,0 +1,20 @@
+Insula Code Lab
+===============
+
+Supercharge your EO development within Insula's familiar interface, by leveraging our integrated code environment, built on JupyterHub and Jupyter notebooks, to seamlessly integrate advanced Python libraries like GDAL, Rasterio, and xarray.
+
+**Collaborate and share your findings with ease, fostering a data-driven approach to Earth observation.**
+
+Insula's code environment unlocks powerful capablities, empowering you to extract the deepest insights from our planet's data.
+
+The following pages provide a guidance to the Insula Code Lab services and capabilities.
+
+If none of these pages answer your question, then please contact us at https://platform.destine.eu/support.
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   python_api
+   examples

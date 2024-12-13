@@ -3,7 +3,7 @@
 Instances
 =========
 
-The Insula platform supports various projects, and its functionalities are designed to be adaptable across different instances. While the screenshots provided may showcase specific layouts, the features and capabilities are universally extendable to any instance of the platform.
+Insula supports various projects, and its functionalities are designed to be adaptable across different instances. While the screenshots provided may showcase specific layouts, the features and capabilities are universally extendable to any instance of the platform.
 
 .. _base_urls:
 

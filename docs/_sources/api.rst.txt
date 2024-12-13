@@ -1,7 +1,7 @@
 .. _api:
 
-Insula API
-==========
+APIs
+====
 
 The Insula platform provides a user-friendly API, designed and documented using the OpenAPI specification. This ensures clear, standardized, and comprehensive guidance for developers to interact with the platform programmatically.
 

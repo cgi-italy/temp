@@ -13,7 +13,7 @@ The systematic processing is only available to users with role *Expert User*.
 Accessing the feature
 +++++++++++++++++++++
 
-* Visit https://insula.destine.eu/sir.
+* Visit <base_url>/intellect.
 * Click on *Process some data*.
 * Identify the card *Systematic processing*.
 * Click on *Explore services* under that card.

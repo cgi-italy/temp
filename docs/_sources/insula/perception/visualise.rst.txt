@@ -12,7 +12,7 @@ This guide provides you with the knowledge to utilize Insula Perception's most c
 
 **Ready to take your data analysis to the next level?**
 
-Our support team is here to help you unlock the full potential of Insula Perception for your unique use case. Don't hesitate to reach out to us at https://platform.destine.eu/support.
+Our support team is here to help you unlock the full potential of Insula Perception for your unique use case. Don't hesitate to reach out to us at insula-ops.it@cgi.com.
 
 .. image:: ../../images/perception_1.png
    :alt: Insula Perception

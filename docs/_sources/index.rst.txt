@@ -17,14 +17,15 @@ Insula excels in providing a comprehensive set of functionalities designed to ma
 
 The following pages provide a guidance to the Insula's services and capabilities.
 
+*The Insula platform supports various projects, and its functionalities are designed to be adaptable across different platform instances. While the screenshots provided may showcase specific layouts, the features and capabilities are universally extendable to any instance of the platform.*
+
 You may also find it useful to refer to:
 
 * The list of :ref:`faq`.
 
 * The list of :ref:`known_issues`.
 
-If none of these pages answer your question, then please contact us at https://platform.destine.eu/support.
-
+If none of these pages answer your question, then please contact us at insula-ops.it@cgi.com.
 
 .. toctree::
    :maxdepth: 2
@@ -33,5 +34,8 @@ If none of these pages answer your question, then please contact us at https://p
    getting_started
    insula/index
    lab/index
+   api
    faq
+   instances
    known_issues
+

@@ -19,7 +19,7 @@ The available *default* resources are:
 
 Please note that not all downloads or actions will consume credits and a clear prompt will inform when you are about to consume credits.
 
-If you need additional resources for your projects, please contact us at https://platform.destine.eu/support. 
+If you need additional resources for your projects, please contact us at insula-ops.it@cgi.com. 
 
 Insula Code Lab
 -----------------

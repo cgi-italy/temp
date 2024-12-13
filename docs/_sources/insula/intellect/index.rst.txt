@@ -3,7 +3,7 @@
 Insula Intellect
 ================
 
-*Insula Intellect* is available at https://insula.destine.eu/sir.
+*Insula Intellect* is available at <base_url>/intellect.
 
 Insula Intellect provides a way to:
 

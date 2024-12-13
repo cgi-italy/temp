@@ -15,7 +15,7 @@ The feature is only available to users with role *Expert User*.
 Accessing the feature
 +++++++++++++++++++++
 
-* Visit https://insula.destine.eu/sir.
+* Visit <base_url>/intellect.
 * Click on *Integrate your own algorithm*.
 * Identify the card *Processing services* and click on it.
 

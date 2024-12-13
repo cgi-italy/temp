@@ -19,7 +19,7 @@ Accessing the feature
 
 Intellect offers you the option to perform event processing. Just:
 
-* Visit https://insula.destine.eu/sir.
+* Visit <base_url>/intellect.
 * Click on *Process some data*.
 * Identify the card *Event processing*.
 * Click on *Event types* under that card.

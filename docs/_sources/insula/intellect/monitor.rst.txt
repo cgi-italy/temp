@@ -5,7 +5,7 @@ Monitor your processing
 
 Once a service execution is running, it is possible to monitor it.
 
-* Visit the https://insula.destine.eu/sir,
+* Visit the <base_url>/intellect,
 * Click on *Open monitoring page*,
 * See the page for "Your latest processing". It might be empty, if there are no recent executions.
 * Click on *See all*,

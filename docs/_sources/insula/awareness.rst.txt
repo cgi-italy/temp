@@ -3,7 +3,7 @@
 Insula Awareness
 ================
 
-Insula Awareness is available at https://insula.destine.eu/advanced and allows you to:
+Insula Awareness is available at <base_url>/awareness and allows you to:
 
 * Manage your storage and sharing options.
 * Manage your own account details, including quotas and transactions.

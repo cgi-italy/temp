@@ -3,7 +3,7 @@
 Insula Perception
 =================
 
-*Insula Perception* is available at https://insula.destine.eu.
+*Insula Perception* is available at <base_url>.
 
 A key feature of Insula is the ability to find, explore and use a range of data and services related to Earth Observation.
 

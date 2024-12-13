@@ -23,27 +23,18 @@ After clicking on it, it opens a panel on the right side, with the following ent
 Catalog
 +++++++
 
-Catalog provides access to the following three groups:
+Catalog provides access to the following groups of collections:
 
-* *EDEN products*, containing the `EDEN <https://platform.destine.eu/services/service/eden/>`_ data available.
+* *Open Data*, containing open data collections. *Note that this group might not be available for all the :ref:`insula_instances`*.
+* *Commercial Data*, containing open data collections. *Note that this group might not be available for all the :ref:`insula_instances`*.
 * *Reference*, containing reference and in situ data uploaded by users on :ref:`awareness` or :ref:`perception`
    * Both :ref:`awareness` and :ref:`perception` allow users to upload products. For more information, see :ref:`uploaded_data` (Awareness) and :ref:`perception_my_storage` (Perception).
    * *Reference data* is also referred as *Uploaded data*, but it has the same meaning. 
 * *Output products*, containing outputs of services generated on :ref:`intellect`.
 
-EDEN products
--------------
+Some :ref:`insula_instances` might contain additional groups of collections.
 
-EDEN products can be searched using the collection, which is the top level grouping.
-
-For each collection is then possible to filter the results using parameters specific to the selected collection.
-
-EDEN products are visible to all users by default, but please note that specific restrictions migth apply in the future and mentioned here.
-
-.. image:: ../../images/perception_6.png
-   :alt: Insula Perception
-
-.. _reference_data: 
+.. _reference_data:
 
 Reference Data
 --------------

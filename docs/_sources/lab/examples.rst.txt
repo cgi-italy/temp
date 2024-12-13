@@ -27,4 +27,4 @@ Additional Resources
 ++++++++++++++++++++
 
 * **JupyterLab Documentation:** For a deeper dive into using JupyterLab functionalities, refer to the official documentation: https://readthedocs.org/projects/jupyterlab/
-* **Online Access:** While the downloaded examples are readily available offline, you may also find them online on Github at https://github.com/SercoSPA/DESP-UserWorkflowService-Templates.
+* **Online Access:** While the downloaded examples are readily available offline, you may also find them online on Github at https://github.com/cgi-italy/notebooks.
